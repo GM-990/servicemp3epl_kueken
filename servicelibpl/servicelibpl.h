@@ -110,6 +110,7 @@ public:
 	RESULT rdsDecoder(ePtr<iRdsDecoder> &ptr) { ptr = 0; return -1; }
 	RESULT keys(ePtr<iServiceKeys> &ptr) { ptr = 0; return -1; }
 	RESULT stream(ePtr<iStreamableService> &ptr) { ptr = 0; return -1; }
+ 	RESULT tap(ePtr<iTapService> &ptr) { ptr = nullptr; return -1; };
 
 	// iPausableService
 	RESULT pause();
